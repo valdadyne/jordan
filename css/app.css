@@ -11,23 +11,28 @@ div#title{
   height:100px;
   margin-top: 1%;
 }
-div#big-img{
-    height: 680px;
-    width: 100%;
-    background-image: url(../img/bg.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+.hero{
+  background: url("../img/bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 680px;
+  opacity: 0.7;
+}
+.hero:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
     opacity: 0.7;
-    padding: 0%;
-}
-div#midrow{
-  padding-top: 50%;
-}
-div#content{
-  color:#fff;
-  vertical-align: middle;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-}
+  }
+  .hero .intro {
+  padding: 3rem;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); }
+
+  .hero h1 {
+    color: #fff;
+    font-size: 1.5rem;
+    line-height: 1.5em;
