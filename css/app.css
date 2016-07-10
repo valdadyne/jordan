@@ -4,6 +4,7 @@ div#title-row h1{
 }
 div#title{
   width:100%;
+  padding-top: 2em;
   margin:0;padding:0;
   background-color: #293138;
   color:orange;
